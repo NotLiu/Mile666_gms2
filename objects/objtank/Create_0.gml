@@ -1,0 +1,34 @@
+/// @description Insert description here
+// You can write your code in this editor
+
+image_speed = 0;
+image_xscale = 1;
+
+x_vel = 0;
+y_vel = 0;
+
+x_decel = 0.5;
+
+x_min = -10;
+x_max = 10;
+y_max = 15;
+
+jump_vel = 15;
+spd = 2;
+grav = 0.75;
+
+//jump particles
+part = part_system_create();
+emitter = part_emitter_create(part);
+
+type = part_type_create();
+part_system_depth(part, -10);
+part_type_sprite(part, sprite3, 0, 0, 0);
+part_type_size(part, 2, 3, -.1, 0);
+part_type_direction(part, 50, 180, 0, 0); 
+part_type_speed(part, 0.001, .003, 0, 0);
+part_type_alpha3(part, .3, 1, 0);
+part_type_life(part, 10, 30);
+
+
+part_type_color3(part, c_white, c_silver, c_teal);
