@@ -42,8 +42,8 @@ y_vel += grav;
 
 if(keyboard_check_pressed(vk_space) && ! place_meeting(x, y-y_vel, objcollide) && place_meeting(x, y+y_vel, objcollide)){ //jump if nothing above
 	y_vel -= jump_vel;
-	part_emitter_region(part, emitter, x-50,x-15,y-50,y-30,ps_shape_ellipse,ps_distr_linear);
-	part_emitter_burst(part, emitter, type, irandom(3));
+	part_emitter_region(part, emitter, x-50,x-15,y-70,y-50,ps_shape_ellipse,ps_distr_linear);
+	part_emitter_burst(part, emitter, type, irandom_range(1,3));
 	show_debug_message("33#");
 }
 
@@ -58,6 +58,10 @@ if(x_vel != 0){
 	if(x_vel > 0){
 		x_vel -= x_decel;
 	}
+}
+
+if(abs(x_vel) < 0.5){
+	x_vel = 0;
 }
 
 show_debug_message(x_vel);
