@@ -13,5 +13,5 @@ else{
 }
 
 if(alarm[0]==-1){ //destroy shell after time
-	alarm[0] = 100;	
+	alarm[0] = 150;	
 }

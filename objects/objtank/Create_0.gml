@@ -37,7 +37,8 @@ barrel_offsetx = 50;
 barrel_direction = point_direction(0, 0, barrel_offsetx, 0);
 barrel_length = point_distance(0, 0, barrel_offsetx, 0);
 
-
+delay = 20;
+delay_2nd = 10;
 
 
 part_type_color3(part, c_white, c_silver, c_teal);

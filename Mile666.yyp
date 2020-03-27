@@ -63,14 +63,6 @@
             }
         },
         {
-            "Key": "1a36eb10-b6bc-42b4-8911-48ceef2967fa",
-            "Value": {
-                "id": "13e84512-2ede-40b4-a786-fccc0269218b",
-                "resourcePath": "scripts\\scrShot\\scrShot.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "25155c72-a63e-459a-9fcf-41014ef6c6f3",
             "Value": {
                 "id": "4afaebce-1a1a-45bc-a685-13e7ad71c80b",
@@ -83,6 +75,22 @@
             "Value": {
                 "id": "8449ebb1-ba86-458b-a933-5bc9acf6b977",
                 "resourcePath": "sprites\\spriteShell\\spriteShell.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4fcf6d84-aa46-4eab-96f2-5b02483ab7ea",
+            "Value": {
+                "id": "4eae11ce-4a69-452a-beaa-17a734686561",
+                "resourcePath": "objects\\objBullet\\objBullet.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "554de6d5-0765-4240-9d36-48786fe2f096",
+            "Value": {
+                "id": "82e2d5ca-d282-4754-9fef-8bba500e14fc",
+                "resourcePath": "sprites\\spriteBullet\\spriteBullet.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -239,6 +247,14 @@
             }
         },
         {
+            "Key": "a1fbc4b5-938e-41c0-a848-70e8432dbdab",
+            "Value": {
+                "id": "c40dbe0e-c88c-4e2d-ae70-3702aba9be36",
+                "resourcePath": "fonts\\font0\\font0.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "a576a3d8-b9d1-4d2a-93bc-3fbf9f23d7b9",
             "Value": {
                 "id": "2a2f2f96-5ab9-4800-bdb0-c9aa451501b4",
@@ -360,7 +376,7 @@
         }
     ],
     "script_order": [
-        "1a36eb10-b6bc-42b4-8911-48ceef2967fa"
+        
     ],
     "tutorial": ""
 }

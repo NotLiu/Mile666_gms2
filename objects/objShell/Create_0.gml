@@ -8,3 +8,5 @@ proj_grav = 1;
 
 tank_y = objtank.y_vel;
 proj_y = 0;
+
+dmg = 5;

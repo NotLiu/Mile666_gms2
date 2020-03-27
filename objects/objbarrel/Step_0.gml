@@ -12,13 +12,25 @@ if(image_angle<360 && image_angle>180){
 }
 
 //show_debug_message(image_angle);
-if(mouse_check_button_pressed(mb_left)){
-		var bulletspawnx = x+lengthdir_x(barrel_length, image_angle+barrel_direction);
-		var bulletspawny = y+lengthdir_y(barrel_length, image_angle+barrel_direction);
-		
+var bulletspawnx = x+lengthdir_x(barrel_length, image_angle+barrel_direction);
+var bulletspawny = y+lengthdir_y(barrel_length, image_angle+barrel_direction);
+
+if(mouse_check_button_pressed(mb_left) && delay <= 0){		
 		with(instance_create_layer(bulletspawnx, bulletspawny, "Instances", objShell)){
-			speed = 30;
+			speed = 40;
 			direction = other.image_angle;
-			
 		}
+		delay = 20;
 }
+
+
+if(mouse_check_button(mb_right) && delay_2nd <= 0 ){
+	with(instance_create_layer(bulletspawnx, bulletspawny, "Instances", objBullet)){
+		speed = 60;
+		direction = other.image_angle;
+	}
+	delay_2nd = 10;
+}
+
+delay -= 1;
+delay_2nd -= 1;	

@@ -1,9 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+image_angle = point_direction(x, y , mouse_x, mouse_y);
+proj_vel = 0;
 
-hlth = 5;
-dist = 0;
-dist_delay = 30;
-
-upgrade_pt = 0;
-pts = 0;
+dmg = 1;
