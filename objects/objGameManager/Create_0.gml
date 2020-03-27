@@ -3,7 +3,7 @@
 
 hlth = 5;
 dist = 0;
-dist_delay = 30;
+dist_delay = 50;
 
 upgrade_pt = 0;
 pts = 0;
