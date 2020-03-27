@@ -30,5 +30,14 @@ part_type_speed(part, 0.001, .003, 0, 0);
 part_type_alpha3(part, .3, 1, 0);
 part_type_life(part, 10, 30);
 
+//projectile
+barrel = noone;
+barrel_offsetx = 50;
+
+barrel_direction = point_direction(0, 0, barrel_offsetx, 0);
+barrel_length = point_distance(0, 0, barrel_offsetx, 0);
+
+
+
 
 part_type_color3(part, c_white, c_silver, c_teal);
