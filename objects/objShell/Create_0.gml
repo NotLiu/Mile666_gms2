@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 image_angle = objbarrel.image_angle;
+
 contact_ground = false;
 notdone = true;
 
@@ -10,8 +11,6 @@ proj_grav = 1;
 tank_y = objtank.y_vel;
 proj_y = 0;
 max_y = 60;
-
-dmg = 5;
 
 part = part_system_create();
 emitter = part_emitter_create(part);

@@ -1,8 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-event_inherited();
+//enemy default health
 
-if(alarm[0]==-1){ //destroy shell after time
-	alarm[0] = 40;	
-}
+hlth = 100;
+curr_hlth = 100;

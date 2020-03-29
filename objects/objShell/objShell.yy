@@ -37,7 +37,7 @@
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "76cb6186-534a-4f02-93a8-578cd4bf6ece",
+    "parentObjectId": "364d037b-6af3-4934-9124-7b08b928a24a",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -64,6 +64,20 @@
             "resourceFilter": 1023,
             "value": "5",
             "varName": "proj_speed",
+            "varType": 0
+        },
+        {
+            "id": "7cac10ae-95b1-443a-9b05-ce1aa99e4327",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "25",
+            "varName": "dmg",
             "varType": 0
         }
     ],
