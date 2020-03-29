@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-image_angle = point_direction(x, y , mouse_x, mouse_y);
+
 
 //clamp barrel angle
 if(image_angle<=180 && image_angle>69){
