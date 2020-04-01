@@ -1,7 +1,5 @@
-/// @description Insert description here
+/// @description  Insert description here
 // You can write your code in this editor
-
-
 
 //clamp barrel angle
 if(image_angle<=180 && image_angle>69){
@@ -20,6 +18,7 @@ if(mouse_check_button_pressed(mb_left) && delay <= 0){
 			speed = 40;
 			direction = other.image_angle;
 		}
+
 		delay = 20;
 }
 
