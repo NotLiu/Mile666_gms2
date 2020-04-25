@@ -25,11 +25,13 @@ if(mouse_check_button_pressed(mb_left) && delay <= 0){
 
 
 if(mouse_check_button(mb_right) && delay_2nd <= 0 ){
-	with(instance_create_layer(bulletspawnx, bulletspawny, "Instances", objBullet)){
-		speed = 50;
-		direction = other.image_angle;
+	if(secondary_wep == "machinegun"){
+		with(instance_create_layer(bulletspawnx, bulletspawny, "Instances", objBullet)){
+			speed = 50;
+			direction = other.image_angle;
+		}
+		delay_2nd = 10;
 	}
-	delay_2nd = 10;
 }
 
 delay -= 1;
