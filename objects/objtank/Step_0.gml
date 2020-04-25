@@ -19,15 +19,30 @@ if(place_meeting(x+x_vel, y,objcollidetank)){ //check collisions horizontal axis
 	while(!place_meeting(x+sign(x_vel), y, objcollidetank)){
 		x += sign(x_vel);	
 	}
-
+	
+	if(x_vel < 0 && objGameManager.dist_delay_set <= 120){
+		objGameManager.dist_delay_set += 1;
+		objParralax.bg1_spd -= .06;
+		objParralax.bg2_spd -= .02;
+		objParralax.bg3_spd -= .005;
+	}
+	else if(x_vel > 0 && objGameManager.dist_delay_set >= 50){ //default dist delay at 70  
+		objGameManager.dist_delay_set -= 1;
+		objParralax.bg1_spd += .15;
+		objParralax.bg2_spd += .12;
+		objParralax.bg3_spd += .03;
+	}
+	show_debug_message(objGameManager.dist_delay_set);
 	x_vel = 0;
 }
+
+//if(objGameManager.dist_delay != 70  
 
 if(place_meeting(x, y+y_vel, objcollide)){ //check collisions vertical axis
 	while(!place_meeting(x, y+sign(y_vel), objcollide)){
 		y += sign(y_vel);	
 	}
-
+	
 	y_vel = 0;
 }
 else{

@@ -14,12 +14,13 @@ var bulletspawnx = x+lengthdir_x(barrel_length, image_angle+barrel_direction);
 var bulletspawny = y+lengthdir_y(barrel_length, image_angle+barrel_direction);
 
 if(mouse_check_button_pressed(mb_left) && delay <= 0){		
+	if(primary_wep == "cannon"){
 		with(instance_create_layer(bulletspawnx, bulletspawny, "Instances", objShell)){
 			speed = 40;
 			direction = other.image_angle;
 		}
-
 		delay = 20;
+	}
 }
 
 

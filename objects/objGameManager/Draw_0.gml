@@ -9,6 +9,9 @@ draw_text_color(32,730, "HEALTH: ", c_aqua, c_red, c_fuchsia, c_maroon, 1);
 
 draw_text_color(room_width - 300, 50, "CASH: " + string(cash), c_white, c_white, c_white, c_white, 1);
 
+draw_text_color(room_width - 50, 730, string(global.level), c_black,c_black,c_black,c_black, 1);
+
+
 for(var i=0; i<hlth; i+=1){
 	draw_sprite(sprite15, -1, 180 + 15*i, 725);
 }
