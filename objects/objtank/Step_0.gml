@@ -2,6 +2,9 @@
 // You can write your code in this editor
 
 if(online == true){
+	if(room == roomstore){
+		image_speed = 0;
+	}
 	if(room == roomstore && keyboard_check_pressed(ord("E"))){ //disembark tank
 		instance_create_layer(x,y,"Instances", objplayer);
 		online = false;
@@ -10,12 +13,18 @@ if(online == true){
 		if(x_vel < x_max){
 			x_vel += spd;	
 		}
+		if(room == roomstore){
+			image_speed = 1;
+		}
 
 	}
 
 	if(keyboard_check(ord("A"))){
 		if(x_vel > x_min){	
 			x_vel -= spd/1.5;	
+		}
+		if(room == roomstore){
+			image_speed = 1;
 		}
 	}
 
@@ -48,6 +57,12 @@ if(online == true){
 		}
 		if(boost_amt < 100 && place_meeting(x, y+sprite_height/2, objcollide)){
 		boost_amt += 1
+		}
+		y_vel = 0;
+	}
+	if(place_meeting(x, y+y_vel, objcollidetank)){ //check collisions vertical axis
+		while(!place_meeting(x, y+sign(y_vel), objcollidetank)){
+			y += sign(y_vel);	
 		}
 		y_vel = 0;
 	}
@@ -97,7 +112,7 @@ if(online == true){
 		x_vel = 0;
 	}
 }
-else{
+else if(objstoreintro.intro==false){
 	image_speed = 0;	
 }
 
