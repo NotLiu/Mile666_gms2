@@ -13,7 +13,7 @@ if(image_angle<360 && image_angle>180){
 var bulletspawnx = x+lengthdir_x(barrel_length, image_angle+barrel_direction);
 var bulletspawny = y+lengthdir_y(barrel_length, image_angle+barrel_direction);
 
-if(mouse_check_button_pressed(mb_left) && delay <= 0){		
+if(mouse_check_button_pressed(mb_left) && delay <= 0 && online == true){		
 	if(primary_wep == "cannon"){
 		with(instance_create_layer(bulletspawnx, bulletspawny, "Instances", objShell)){
 			speed = 40;
@@ -24,7 +24,7 @@ if(mouse_check_button_pressed(mb_left) && delay <= 0){
 }
 
 
-if(mouse_check_button(mb_right) && delay_2nd <= 0 ){
+if(mouse_check_button(mb_right) && delay_2nd <= 0 && online == true){
 	if(secondary_wep == "machinegun"){
 		with(instance_create_layer(bulletspawnx, bulletspawny, "Instances", objBullet)){
 			speed = 50;
