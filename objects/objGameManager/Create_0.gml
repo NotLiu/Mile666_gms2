@@ -2,7 +2,7 @@
 // You can write your code in this editor
 boss_beat = false;
 hlth = 5;
-dist = 0;
+dist = 49;
 
 dist_delay_set = 70;
 dist_delay = dist_delay_set;

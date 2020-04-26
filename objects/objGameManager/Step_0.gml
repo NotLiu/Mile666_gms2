@@ -6,13 +6,19 @@ if(dist_delay<=0 && dist < 666 && running == true){
 	dist_delay = dist_delay_set;
 	if(dist/global.level >= 50){
 		global.level += 1;
+		global.pitstop = true;
 		show_debug_message("PITSTOP");
 		boss_beat = true;
+
 	}
 }
 
-if(boss_beat == true){
-	room_goto(2);	
+if(boss_beat == true && room != roomstore){
+	show_debug_message("####");
+	room_goto(roomstore);	
+	/*with(objtank){
+		online = false;	
+	}*/
 }
 
 if(global.bossfight == true || global.pitstop == true){

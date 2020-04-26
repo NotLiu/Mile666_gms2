@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "13d5ea6e-4f16-4740-99d5-9c0d65191546",
+            "Value": {
+                "id": "12269c03-7324-4c44-b9c5-3d07751e4220",
+                "resourcePath": "objects\\objstoreintro\\objstoreintro.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "165a120b-2e5e-4988-92fe-1787ad93793b",
             "Value": {
                 "id": "7438491e-f151-4dab-935d-beb2546dcf60",

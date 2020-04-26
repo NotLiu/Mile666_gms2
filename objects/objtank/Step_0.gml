@@ -1,6 +1,7 @@
 // @description Insert description here
 // You can write your code in this editor
 
+show_debug_message(x);
 if(online == true){
 	if(keyboard_check(ord("D"))){
 		if(x_vel < x_max){
