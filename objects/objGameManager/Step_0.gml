@@ -7,7 +7,12 @@ if(dist_delay<=0 && dist < 666 && running == true){
 	if(dist/global.level >= 50){
 		global.level += 1;
 		show_debug_message("PITSTOP");
+		boss_beat = true;
 	}
+}
+
+if(boss_beat == true){
+	room_goto(2);	
 }
 
 if(global.bossfight == true || global.pitstop == true){

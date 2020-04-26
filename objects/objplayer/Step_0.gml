@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 if(keyboard_check(ord("D")) && x_vel < x_max_vel){
+	show_debug_message("XXX");
 	x_vel += spd;
 	image_xscale = 1;
 }
@@ -12,12 +13,12 @@ if(keyboard_check(ord("A")) && x_vel > -x_max_vel){
 	x_vel -= spd;
 	image_xscale = -1;
 }
-else{
+else if(!keyboard_check(ord("D"))){
 	x_vel = 0;	
 }
 
 if(keyboard_check_pressed(vk_space) && place_meeting(x, y+sprite_height/2, objcollide)){ // if on ground you can jump
-	y_vel += jump_vel;
+	y_vel -= jump_vel;
 }
 
 if(place_meeting(x+x_vel, y,objcollide)){ //check collisions horizontal axis

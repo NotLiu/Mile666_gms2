@@ -7,6 +7,6 @@ jump_vel = 5;
 spd = 3;
 
 x_max_vel = 10;
-y_max_vel = 10;
+y_max_vel = 5;
 
-grav = 10;
+grav = 5;

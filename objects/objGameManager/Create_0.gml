@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+boss_beat = false;
 hlth = 5;
 dist = 0;
 
