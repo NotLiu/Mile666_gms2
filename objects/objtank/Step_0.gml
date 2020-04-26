@@ -1,8 +1,11 @@
 // @description Insert description here
 // You can write your code in this editor
 
-show_debug_message(x);
 if(online == true){
+	if(room == roomstore && keyboard_check_pressed(ord("E"))){ //disembark tank
+		instance_create_layer(x,y,"Instances", objplayer);
+		online = false;
+	}
 	if(keyboard_check(ord("D"))){
 		if(x_vel < x_max){
 			x_vel += spd;	
@@ -55,7 +58,7 @@ if(online == true){
 	y_vel += grav;
 
 
-
+	//boost
 	if(keyboard_check_pressed(vk_space) && ! place_meeting(x, y-y_vel, objcollide) && place_meeting(x, y+sprite_height/2, objcollide)){ //jump if nothing above
 		y_vel -= jump_vel;
 		part_emitter_region(part, emitter, x-90,x-55,y-70,y-50,ps_shape_ellipse,ps_distr_linear);

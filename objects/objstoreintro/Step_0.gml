@@ -3,9 +3,9 @@
 
 if(objtank.x != 250 && intro == true){
 	with(objtank){
-		online = false;
 		x=lerp(x, 250.00, .05);
 		if(abs(x-250)<0.5){
+			online = false;
 			x = 250	
 		}
 	}
@@ -13,4 +13,7 @@ if(objtank.x != 250 && intro == true){
 else if(objtank.x == 250){
 	intro = false;	
 	show_debug_message("DD");
+	if(player == noone){
+		player = instance_create_depth(objtank.x,objtank.y,-1, objplayer);
+	}
 }
