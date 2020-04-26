@@ -3,4 +3,9 @@
 x = objtank.x;
 y = objtank.y;
 
-image_angle = point_direction(x, y , mouse_x, mouse_y);
+if(online){
+	image_angle = point_direction(x, y , mouse_x, mouse_y);
+}
+else{
+	image_angle = 0;	
+}

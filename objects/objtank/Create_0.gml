@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+online = true;
 image_speed = 1;
 image_xscale = 1;
 
@@ -16,6 +16,11 @@ y_max = 15;
 jump_vel = 15;
 spd = 2;
 grav = 0.75;
+
+boosters = true;
+boost_amt = 100;
+boost_vel = 1.4;
+boost_min_y = 200;
 
 //jump particles
 part = part_system_create();
