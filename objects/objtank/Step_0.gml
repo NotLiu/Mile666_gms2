@@ -6,8 +6,9 @@ if(online == true){
 		image_speed = 0;
 	}
 	if(room == roomstore && keyboard_check_pressed(ord("E"))){ //disembark tank
-		instance_create_layer(x,y,"Instances", objplayer);
+		instance_create_depth(x,y,-5, objplayer);
 		online = false;
+		objbarrel.online = false;
 	}
 	if(keyboard_check(ord("D"))){
 		if(x_vel < x_max){
@@ -88,7 +89,6 @@ if(online == true){
 		part_emitter_region(part, emitter, x-90,x-55,y-70,y-50,ps_shape_ellipse,ps_distr_linear);
 		part_emitter_burst(part, emitter, type, irandom_range(1,3));
 		boost_amt -= 1;
-		show_debug_message("EEEEE");
 	}
 	else{
 		part_type_direction(part, 50, 180, 5, 0); 

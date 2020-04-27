@@ -3,7 +3,7 @@
 depth = -100;
 boss_beat = false;
 hlth = 5;
-dist = 0 ;
+dist = 0;
 
 dist_delay_set = 70;
 dist_delay = dist_delay_set;

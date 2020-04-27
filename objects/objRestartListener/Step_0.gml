@@ -2,5 +2,8 @@
 // You can write your code in this editor
 
 if(keyboard_check(ord("3")) && keyboard_check(ord("6"))){
-	game_restart();	
+	room_goto(roomintro);	
+	if(room != roomintro){
+		instance_destroy(objGameManager);
+	}
 }

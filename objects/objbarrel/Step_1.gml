@@ -4,7 +4,6 @@ x = objtank.x;
 y = objtank.y;
 
 if(objtank.online == true){
-	show_debug_message("XXXX");
 	image_angle = point_direction(x, y , mouse_x, mouse_y);
 }
 else{

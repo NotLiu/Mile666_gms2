@@ -12,7 +12,6 @@ if(objtank.x != 250 && intro == true){
 }
 else if(objtank.x == 250){
 	intro = false;	
-	show_debug_message("DD");
 	if(player == noone){
 		player = instance_create_depth(objtank.x,objtank.y,-1, objplayer);
 	}

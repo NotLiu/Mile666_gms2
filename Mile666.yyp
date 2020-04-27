@@ -495,6 +495,14 @@
             }
         },
         {
+            "Key": "bac08745-131d-4cb9-b966-940fdb85103a",
+            "Value": {
+                "id": "addedb5a-4349-4453-a096-e7a9789a8c3e",
+                "resourcePath": "paths\\path0\\path0.yy",
+                "resourceType": "GMPath"
+            }
+        },
+        {
             "Key": "bb6fb8c6-85a7-4d99-920b-70a3a5a83601",
             "Value": {
                 "id": "8e372cf0-b877-4e85-ae35-cbd7eff0b2ed",
