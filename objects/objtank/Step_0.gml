@@ -75,7 +75,7 @@ if(online == true){
 
 
 	//boost
-	if(keyboard_check_pressed(vk_space) && ! place_meeting(x, y-y_vel, objcollide) && place_meeting(x, y+sprite_height/2, objcollide)){ //jump if nothing above
+	if(keyboard_check_pressed(vk_space) && ! place_meeting(x, y-y_vel, objcollide) && place_meeting(x, y+round(sprite_height/2), objcollide)){ //jump if nothing above
 		y_vel -= jump_vel;
 		part_emitter_region(part, emitter, x-90,x-55,y-70,y-50,ps_shape_ellipse,ps_distr_linear);
 		part_emitter_burst(part, emitter, type, irandom_range(1,3));
@@ -93,7 +93,6 @@ if(online == true){
 	else{
 		part_type_direction(part, 50, 180, 5, 0); 
 	}
-	show_debug_message(boost_amt);
 
 
 	if(x_vel != 0){	

@@ -13,6 +13,8 @@ upgrade_pt = 0;
 pts = 0;
 cash = 0;
 
+enemy_cnt = 0;
+
 potential_mon = ds_list_create();
 ds_list_add(potential_mon, objenemy);
 

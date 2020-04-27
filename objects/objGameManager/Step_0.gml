@@ -40,3 +40,9 @@ else{ //reset to default
 	running = true;
 }
 dist_delay -= 1;
+
+//spawn enemies
+if(room == roomgame && alarm[0] = -1 && enemy_cnt <= 10){
+	var random_spawn = irandom_range(400/global.level/5,500/global.level/5);
+	alarm[0] = random_spawn;
+}
