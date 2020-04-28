@@ -1,6 +1,6 @@
 /// @description  Insert description here
 // You can write your code in this editor
-
+depth = 1;
 //clamp barrel angle
 if(image_angle<=180 && image_angle>69){
 	image_angle = 69;	

@@ -16,16 +16,16 @@ y_vel = 0;
 x_decel = 0.5;
 
 x_min = -10;
-x_max = 10;
-y_max = 15;
+x_max = 15;
+y_max = 20;
 
-jump_vel = 15;
-spd = 2;
+jump_vel = 20;
+spd = 2.5;
 grav = 0.75;
 
 boosters = true;
 boost_amt = 100;
-boost_vel = 1.4;
+boost_vel = 1.7;
 boost_min_y = 200;
 
 //jump particles

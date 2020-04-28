@@ -16,7 +16,7 @@ cash = 0;
 enemy_cnt = 0;
 
 potential_mon = ds_list_create();
-ds_list_add(potential_mon, objenemy);
+ds_list_add(potential_mon, 1);
 
 
 global.level = 1;

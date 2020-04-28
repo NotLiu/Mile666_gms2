@@ -13,3 +13,6 @@ curr_hlth = 100;
 
 cash_mult = 1;
 pt_mult = 10;
+
+fire_delay_set = 100;
+fire_delay = fire_delay_set;

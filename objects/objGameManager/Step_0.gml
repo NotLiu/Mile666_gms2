@@ -20,7 +20,8 @@ if(boss_beat == true && room != roomstore){
 		online = false;	
 	}*/
 }
-
+show_debug_message(ds_list_size(potential_mon));
+show_debug_message(ds_list_find_value(potential_mon,irandom_range(0,ds_list_size(potential_mon)-1)));
 if(global.bossfight == true || global.pitstop == true){
 	with(objParralax){
 		bg1_spd = 0;
@@ -31,18 +32,16 @@ if(global.bossfight == true || global.pitstop == true){
 	running = false;
 }
 else{ //reset to default
-	with(objParralax){
-		bg1_spd = 8;
-		bg2_spd = 4;
-		bg3_spd = 2;
-	}
-	
 	running = true;
 }
 dist_delay -= 1;
 
 //spawn enemies
 if(room == roomgame && alarm[0] = -1 && enemy_cnt <= 10){
-	var random_spawn = irandom_range(400/global.level/5,500/global.level/5);
+	var random_spawn = irandom_range(800/global.level/5,1000/global.level/5);
 	alarm[0] = random_spawn;
+}
+
+if(hlth <= 0){
+	room_goto(room3);
 }
