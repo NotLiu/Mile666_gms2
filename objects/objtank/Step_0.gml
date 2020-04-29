@@ -9,6 +9,7 @@ if(online == true){
 		instance_create_depth(x,y,-5, objplayer);
 		online = false;
 		objbarrel.online = false;
+		x_vel = 0;
 	}
 	if(keyboard_check(ord("D"))){
 		if(x_vel < x_max){

@@ -1,7 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
+objGameManager.hlth -= 1;
 
-intro = true;
-player = noone;
-
-objGameManager.enemy_cnt = 0;
+instance_destroy();

@@ -14,14 +14,13 @@ if(dist_delay<=0 && dist < 666 && running == true){
 }
 
 if(boss_beat == true && room != roomstore){
-	show_debug_message("####");
+
 	room_goto(roomstore);	
 	/*with(objtank){
 		online = false;	
 	}*/
 }
-show_debug_message(ds_list_size(potential_mon));
-show_debug_message(ds_list_find_value(potential_mon,irandom_range(0,ds_list_size(potential_mon)-1)));
+
 if(global.bossfight == true || global.pitstop == true){
 	with(objParralax){
 		bg1_spd = 0;
@@ -42,6 +41,6 @@ if(room == roomgame && alarm[0] = -1 && enemy_cnt <= 10){
 	alarm[0] = random_spawn;
 }
 
-if(hlth <= 0){
+if(hlth <= 0 && room != room3){
 	room_goto(room3);
 }

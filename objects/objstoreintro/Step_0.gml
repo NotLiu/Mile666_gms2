@@ -16,3 +16,7 @@ else if(objtank.x == 250){
 		player = instance_create_depth(objtank.x,objtank.y,-1, objplayer);
 	}
 }
+
+with(objenemy){
+	instance_destroy();	
+}

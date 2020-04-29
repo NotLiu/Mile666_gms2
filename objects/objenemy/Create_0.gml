@@ -9,10 +9,15 @@ rand_pos_y = irandom_range(30, 520);
 intro = true;
 
 hlth = 100;
-curr_hlth = 100;
+curr_hlth = hlth;
 
 cash_mult = 1;
 pt_mult = 10;
 
-fire_delay_set = 100;
+fire_delay_set = 200;
 fire_delay = fire_delay_set;
+adj_spd = 0.05;
+
+fire = true;
+
+type = 1;

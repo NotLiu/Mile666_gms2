@@ -11,21 +11,21 @@ if(curr_hlth <= 0){ //dies
 
 
 if(x != rand_pos_x && intro == true){
-	x=lerp(x, rand_pos_x, .05);
-	y=lerp(y, rand_pos_y, .05);
+	x=lerp(x, rand_pos_x, adj_spd);
+	y=lerp(y, rand_pos_y, adj_spd);
 	if(abs(x-rand_pos_x)<0.5){
 		online = false;
 		x = rand_pos_x;
 	}
 	
 }
-else if(x == rand_pos_x){
+else if(x == rand_pos_x && type == 1){
 	intro = false;	
 	path_start(path0,irandom_range(1,3),path_action_continue, false);
 }
 
 
-if(fire_delay <= 0){
+if(fire_delay <= 0 && fire){
 	with(instance_create_depth(x,y,2,objenemy_atk)){
 		direction = point_direction(x,y,objtank.x,objtank.y);
 		speed = 6;
