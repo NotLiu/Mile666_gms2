@@ -2,11 +2,11 @@
 // You can write your code in this editor
 depth = 1;
 //clamp barrel angle
-if(image_angle<=180 && image_angle>69){
-	image_angle = 69;	
+if(image_angle<=180 && image_angle>80){
+	image_angle = 80;	
 }
-if(image_angle<360 && image_angle>180){
-	image_angle = 0;	
+if(image_angle<340 && image_angle>180){
+	image_angle = 340;	
 }
 
 //show_debug_message(image_angle);

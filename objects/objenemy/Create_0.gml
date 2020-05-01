@@ -21,3 +21,4 @@ adj_spd = 0.05;
 fire = true;
 
 type = 1;
+boss = false;

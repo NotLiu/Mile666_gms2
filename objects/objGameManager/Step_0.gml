@@ -4,7 +4,7 @@
 if(dist_delay<=0 && dist < 666 && running == true){
 	dist += 1;	
 	dist_delay = dist_delay_set;
-	if(dist/global.level >= 50){
+	if(dist/global.level >= milethresh){
 		global.level += 1;
 		global.pitstop = true;
 		show_debug_message("PITSTOP");
@@ -37,7 +37,7 @@ dist_delay -= 1;
 
 //spawn enemies
 if(room == roomgame && alarm[0] = -1 && enemy_cnt <= 10){
-	var random_spawn = irandom_range(800/global.level/5,1000/global.level/5);
+	var random_spawn = irandom_range(650/global.level/5,900/global.level/5);
 	alarm[0] = random_spawn;
 }
 
