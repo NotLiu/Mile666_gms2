@@ -124,8 +124,11 @@ if(barrel == noone){
 //count iframes
 if(iframe == true){
 	iframe_delay -= 1;
+	flashAlpha -= 0.01;
 	if(iframe_delay <= 0){
 		iframe = false;
 		iframe_delay = set_iframe;
 	}
 }
+
+

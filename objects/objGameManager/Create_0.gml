@@ -19,6 +19,9 @@ potential_mon = ds_list_create();
 ds_list_add(potential_mon, 1);
 ds_list_add(potential_mon, 2);
 
+potential_obstacles = ds_list_create();
+ds_list_add(potential_obstacles, 1);
+
 
 global.level = 1;
 global.bossfight = false;

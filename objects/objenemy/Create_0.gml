@@ -22,3 +22,7 @@ fire = true; // does enemy fire projectile?
 
 type = 1;
 boss = false;
+
+//flash
+flashAlpha = 0;
+flashColor = c_red;

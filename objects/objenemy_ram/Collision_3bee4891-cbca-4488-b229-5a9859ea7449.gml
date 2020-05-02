@@ -3,5 +3,6 @@
 if(objtank.iframe == false){
 	objGameManager.hlth -= 1;
 	objtank.iframe = true;
+	objtank.flashAlpha = 1;
 }
 instance_destroy();

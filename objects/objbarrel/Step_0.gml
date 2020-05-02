@@ -36,3 +36,5 @@ if(mouse_check_button(mb_right) && delay_2nd <= 0 && online == true){
 
 delay -= 1;
 delay_2nd -= 1;	
+
+flashAlpha = objtank.flashAlpha;

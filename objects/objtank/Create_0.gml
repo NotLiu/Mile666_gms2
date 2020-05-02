@@ -57,6 +57,11 @@ secondary_wep = "machinegun";
 
 part_type_color3(part, c_white, c_silver, c_teal);
 
-iframe = true;
+// iframes
+iframe = false;
 set_iframe = 100;
 iframe_delay = set_iframe;
+
+//flash
+flashAlpha = 0;
+flashColor = c_white;

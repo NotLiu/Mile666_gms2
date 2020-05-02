@@ -21,3 +21,7 @@ if(x != rand_pos_x && intro == true){
 }
 
 
+//flash
+if(flashAlpha > 0){
+	flashAlpha -= 0.05;
+}

@@ -41,6 +41,12 @@ if(room == roomgame && alarm[0] = -1 && enemy_cnt <= 10){
 	alarm[0] = random_spawn;
 }
 
+if(room == roomgame && alarm[1] = -1){
+	var random_spawn_obs = irandom_range(100/global.level/5,1500/global.level/5);
+	alarm[1] = random_spawn_obs;
+}
+
+
 if(hlth <= 0 && room != room3){
 	room_goto(room3);
 }
