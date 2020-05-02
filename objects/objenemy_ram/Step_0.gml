@@ -9,7 +9,7 @@ if(x == rand_pos_x && type == 2){
 }
 
 if(intro == false){
-	image_angle = lerp(image_angle,point_direction(x,y,objtank.x,objtank.y),0.2);
+	image_angle = lerp(image_angle,point_direction(x,y,objtank.x,objtank.y),0.1);
 	if(image_angle - point_direction(x,y,objtank.x,objtank.y) < 0.1){
 		direction = point_direction(x,y,objtank.x,objtank.y);
 		speed = 12;

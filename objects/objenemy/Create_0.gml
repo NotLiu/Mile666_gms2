@@ -14,11 +14,11 @@ curr_hlth = hlth;
 cash_mult = 1;
 pt_mult = 10;
 
-fire_delay_set = 200;
+fire_delay_set = 150;
 fire_delay = fire_delay_set;
 adj_spd = 0.05;
 
-fire = true;
+fire = true; // does enemy fire projectile?
 
 type = 1;
 boss = false;
