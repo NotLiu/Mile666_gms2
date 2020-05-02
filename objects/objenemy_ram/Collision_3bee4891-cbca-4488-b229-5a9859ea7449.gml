@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-objGameManager.hlth -= 1;
-
+if(objtank.iframe == false){
+	objGameManager.hlth -= 1;
+	objtank.iframe = true;
+}
 instance_destroy();

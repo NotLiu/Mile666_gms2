@@ -120,3 +120,12 @@ if(barrel == noone){
 	//create barrel
 	barrel = instance_create_depth(x, y, 1, objbarrel);
 }
+
+//count iframes
+if(iframe == true){
+	iframe_delay -= 1;
+	if(iframe_delay <= 0){
+		iframe = false;
+		iframe_delay = set_iframe;
+	}
+}
