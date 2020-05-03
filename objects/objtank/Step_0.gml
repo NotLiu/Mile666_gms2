@@ -69,12 +69,6 @@ if(online == true){
 		y_vel = 0;
 	}
 
-	y += y_vel;
-
-
-	y_vel += grav;
-
-
 	//boost
 	if(keyboard_check_pressed(vk_space) && ! place_meeting(x, y-y_vel, objcollide) && place_meeting(x, y+round(sprite_height/2), objcollide)){ //jump if nothing above
 		y_vel -= jump_vel;
@@ -94,7 +88,16 @@ if(online == true){
 	else{
 		part_type_direction(part, 50, 180, 5, 0); 
 	}
+	
+	if(keyboard_check(vk_space) && boosters = false){
+		y_vel -= .5;
+	}
+	
+	
+	y += y_vel;
 
+	y_vel += grav;
+	
 
 	if(x_vel != 0){	
 		x += x_vel;
@@ -131,4 +134,4 @@ if(iframe == true){
 	}
 }
 
-
+grav = grav_set;

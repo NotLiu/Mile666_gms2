@@ -26,7 +26,7 @@ ds_list_add(potential_obstacles, 1);
 ds_list_add(potential_obstacles, 1);
 ds_list_add(potential_obstacles, 1);
 ds_list_add(potential_obstacles, 1);
-ds_list_add(potential_obstacles, 2);
+
 
 
 

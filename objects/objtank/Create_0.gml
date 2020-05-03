@@ -21,9 +21,10 @@ y_max = 20;
 
 jump_vel = 20;
 spd = 2.5;
-grav = 0.75;
+grav_set = 1;
+grav = grav_set;
 
-boosters = true;
+boosters = false;
 boost_amt = 100;
 boost_vel = 1.7;
 boost_min_y = 200;
