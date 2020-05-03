@@ -1,14 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if(dist_delay<=0 && dist < 666 && running == true){
+if(dist_delay<=0 && dist < 666 && running == true && boss_banner == noone){
 	dist += 1;	
 	dist_delay = dist_delay_set;
 	if(dist/global.level >= milethresh){
-		global.level += 1;
-		global.pitstop = true;
-		show_debug_message("PITSTOP");
-		boss_beat = true;
+		//global.pitstop = true;
+		boss_banner = instance_create_depth(0,room_height/2-sprite_height/2 -200,-100, objboss_notice);
 
 	}
 }
@@ -36,12 +34,12 @@ else{ //reset to default
 dist_delay -= 1;
 
 //spawn enemies
-if(room == roomgame && alarm[0] = -1 && enemy_cnt <= 4 + 2*global.level){
+if(room == roomgame && alarm[0] = -1 && enemy_cnt <= 4 + 2*global.level && global.bossfight == false){
 	var random_spawn = irandom_range(650/global.level/5,900/global.level/5);
 	alarm[0] = random_spawn;
 }
 
-if(room == roomgame && alarm[1] = -1){
+if(room == roomgame && alarm[1] = -1 && global.bossfight == false){
 	var random_spawn_obs = irandom_range(300/global.level/5,1600/global.level/5);
 	alarm[1] = random_spawn_obs;
 }

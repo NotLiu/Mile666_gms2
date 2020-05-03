@@ -6,6 +6,10 @@ if(curr_hlth <= 0){ //dies
 	objGameManager.pts += 100*pt_mult;
 	instance_destroy();
 	objGameManager.enemy_cnt -= 1;
+	if(boss == true){
+		global.bossfight = false;
+		objGameManager.boss_beat = true;
+	}
 }
 
 

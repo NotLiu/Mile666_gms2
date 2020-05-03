@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+global.pitstop = true;
+global.level += 1;
 
 intro = true;
 player = noone;
