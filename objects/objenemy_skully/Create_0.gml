@@ -4,4 +4,4 @@
 // Inherit the parent event
 event_inherited();
 
-fire_delay_set = 100;
+fire_delay_set = 150;

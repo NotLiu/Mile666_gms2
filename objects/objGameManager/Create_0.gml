@@ -3,7 +3,7 @@
 depth = -100;
 boss_beat = false;
 hlth = 10;
-dist = 49;
+dist = 0;
 
 dist_delay_set = 70;
 dist_delay = dist_delay_set;
@@ -17,10 +17,17 @@ enemy_cnt = 0;
 
 potential_mon = ds_list_create();
 ds_list_add(potential_mon, 1);
+ds_list_add(potential_mon, 1);
+ds_list_add(potential_mon, 1);
 ds_list_add(potential_mon, 2);
 
 potential_obstacles = ds_list_create();
 ds_list_add(potential_obstacles, 1);
+ds_list_add(potential_obstacles, 1);
+ds_list_add(potential_obstacles, 1);
+ds_list_add(potential_obstacles, 1);
+ds_list_add(potential_obstacles, 2);
+
 
 
 global.level = 1;

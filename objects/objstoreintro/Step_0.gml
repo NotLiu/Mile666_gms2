@@ -20,3 +20,6 @@ else if(objtank.x == 250){
 with(objenemy){
 	instance_destroy();	
 }
+with(objobstacle){
+	instance_destroy();	
+}

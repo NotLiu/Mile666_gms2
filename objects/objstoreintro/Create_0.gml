@@ -4,4 +4,5 @@
 intro = true;
 player = noone;
 
+objGameManager.hlth = 10;
 objGameManager.enemy_cnt = 0;

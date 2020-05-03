@@ -10,4 +10,18 @@ with(objParralax){
 	bg2_spd = 4;
 	bg3_spd = 2;
 }
-	
+
+//add diff obst and enemies to potent
+
+if(global.level == 2){
+	//obs
+	ds_list_add(objGameManager.potential_obstacles,2);
+	ds_list_add(objGameManager.potential_obstacles,2);
+	ds_list_add(objGameManager.potential_obstacles,2);
+	//enemies
+	ds_list_add(objGameManager.potential_mon,2);
+	ds_list_add(objGameManager.potential_mon,2);
+	ds_list_add(objGameManager.potential_mon,2);
+}
+
+
