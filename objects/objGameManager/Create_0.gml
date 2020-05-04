@@ -4,7 +4,7 @@ depth = -100;
 boss_beat = false;
 boss_banner = noone;
 hlth = 10;
-dist = 49;
+dist = 0;
 
 dist_delay_set = 70;
 dist_delay = dist_delay_set;

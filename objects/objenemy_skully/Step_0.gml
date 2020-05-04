@@ -12,7 +12,7 @@ if(x == rand_pos_x){
 if(fire_delay <= 0 && fire){
 	with(instance_create_depth(x,y,2,objenemy_atk)){
 		direction = point_direction(x,y,objtank.x,objtank.y);
-		speed = 6;
+		speed = 10;
 	}
 	fire_delay = fire_delay_set;
 }

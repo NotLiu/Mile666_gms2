@@ -67,7 +67,11 @@ if(online == true){
 			y += sign(y_vel);	
 		}
 		y_vel = 0;
+		show_debug_message("cieling");
 	}
+	y += y_vel;
+
+	y_vel += grav;
 
 	//boost
 	if(keyboard_check_pressed(vk_space) && ! place_meeting(x, y-y_vel, objcollide) && place_meeting(x, y+round(sprite_height/2), objcollide)){ //jump if nothing above
@@ -77,12 +81,10 @@ if(online == true){
 		keyboard_clear(vk_space);
 	}
 	else if(keyboard_check(vk_space) && !place_meeting(x, y+sprite_height/2, objcollide) && boosters = true && boost_amt > 0){ //if not on ground and have boost upgrade
-		part_type_direction(part, 250, 300, 5, 1); 
-
 		y_vel -= boost_vel;
 	
-		part_emitter_region(part, emitter, x-90,x-55,y-70,y-50,ps_shape_ellipse,ps_distr_linear);
-		part_emitter_burst(part, emitter, type, irandom_range(1,3));
+		part_emitter_region(part, emitter_boost, x-90,x-55,y-70,y-50,ps_shape_ellipse,ps_distr_linear);
+		part_emitter_burst(part, emitter_boost, type_boost, irandom_range(1,3));
 		boost_amt -= 1;
 	}
 	else{
@@ -92,11 +94,6 @@ if(online == true){
 	if(keyboard_check(vk_space) && boosters = false){
 		y_vel -= .5;
 	}
-	
-	
-	y += y_vel;
-
-	y_vel += grav;
 	
 
 	if(x_vel != 0){	
