@@ -24,7 +24,7 @@ spd = 2.5;
 grav_set = 1;
 grav = grav_set;
 
-boosters = true;
+boosters = objGameManager.boost;
 boost_amt = 100;
 boost_vel = 1.7;
 boost_min_y = 200;
@@ -37,22 +37,10 @@ type = part_type_create();
 part_system_depth(part, 10);
 part_type_sprite(type, sprite3, 0, 0, 0);
 part_type_size(type, 2, 3, -.04, 0);
-part_type_direction(type, 50, 180, 5, 0); 
-part_type_speed(type, 0.001, .003, 0, 0);
+part_type_direction(type, -210, -240, 5, 0); 
+part_type_speed(type, 1, 3, 0, 0);
 part_type_alpha3(type, .3, 1, 0);
 part_type_life(type, 10, 30);
-
-//boost particles
-
-emitter_boost = part_emitter_create(part);
-
-type_boost = part_type_create();
-part_type_direction(type_boost, -210, -240, 5, 1); 
-part_type_sprite(type_boost, sprite3, 0, 0, 0);
-part_type_size(type_boost, 2, 3, -.04, 0);
-part_type_speed(type_boost, 5, 10, 0, 0);
-part_type_alpha3(type_boost, .3, 1, 0);
-part_type_life(type_boost, 10, 30);
 
 //projectile
 barrel = noone;

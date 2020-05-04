@@ -43,11 +43,5 @@ y_vel += grav;
 if(x_vel != 0){	
 	x += x_vel;
 }
-/*
-if(abs(x_vel) < 0.5){
-	x_vel = 0;
-}
-*/
-show_debug_message(x_vel);
 
 x_vel = 0;

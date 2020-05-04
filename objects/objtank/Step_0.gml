@@ -83,8 +83,8 @@ if(online == true){
 	else if(keyboard_check(vk_space) && !place_meeting(x, y+sprite_height/2, objcollide) && boosters = true && boost_amt > 0){ //if not on ground and have boost upgrade
 		y_vel -= boost_vel;
 	
-		part_emitter_region(part, emitter_boost, x-90,x-55,y-70,y-50,ps_shape_ellipse,ps_distr_linear);
-		part_emitter_burst(part, emitter_boost, type_boost, irandom_range(1,3));
+		part_emitter_region(part, emitter, x-90,x-55,y-70,y-50,ps_shape_ellipse,ps_distr_linear);
+		part_emitter_burst(part, emitter, type, irandom_range(1,3));
 		boost_amt -= 1;
 	}
 	else{
