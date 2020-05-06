@@ -26,7 +26,7 @@ grav = grav_set;
 
 boosters = objGameManager.boost;
 boost_amt = 100;
-boost_vel = 1.7;
+boost_vel = 2;
 boost_min_y = 200;
 
 //jump particles

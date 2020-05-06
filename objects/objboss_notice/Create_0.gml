@@ -5,3 +5,7 @@ image_speed = 1;
 if(alarm[0] == -1){
 	alarm[0] = 200;
 }
+
+with(objobstacle){
+	instance_destroy();	
+}

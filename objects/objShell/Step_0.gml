@@ -17,9 +17,15 @@ if(!place_meeting(x,y,objcollide)){
 	y += tank_y + proj_y;
 }
 else{
-	contact_ground = true;
-	speed = 0;
-	x -= 30;	
+	if(room != roomstore){
+		contact_ground = true;
+		speed = 0;
+		x -= 30;	
+	}
+	else{
+		contact_ground = true;
+		speed = 0;	
+	}
 }
 
 if(contact_ground && notdone){
