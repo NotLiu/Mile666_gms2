@@ -3,9 +3,16 @@
 x = objtank.x;
 y = objtank.y;
 
-if(objtank.online == true){
-	image_angle = point_direction(x, y , mouse_x, mouse_y);
+if(global.control == 0){
+	if(objtank.online == true){
+		image_angle = point_direction(x, y , mouse_x, mouse_y);
+	}
+	else{
+		image_angle = 0;	
+	}
 }
 else{
-	image_angle = 0;	
+	if(objtank.online == false){
+		image_angle = 0;	
+	}
 }

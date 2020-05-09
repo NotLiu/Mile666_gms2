@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 room_goto(roomgame);
+global.level += 1;
 global.pitstop = false;
 objGameManager.boss_beat = false;
 objGameManager.curr_hlth = objGameManager.hlth;

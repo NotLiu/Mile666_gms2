@@ -1,5 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(keyboard_check(vk_space)){
-	room_goto_next();	
+if(position_meeting(mouse_x,mouse_y,id)){
+	color = c_yellow;
+}
+else{
+	color = c_white;
 }

@@ -1,13 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if(dist_delay<=0 && dist < 666 && running == true && boss_banner == noone){
+if(dist_delay<=0 && dist < 666 && running == true && boss_banner == noone && boss_beat == false){
 	dist += 1;	
 	dist_delay = dist_delay_set;
 	if(dist/global.level >= milethresh){
 		//global.pitstop = true;
+		dist = global.level*50;
 		boss_banner = instance_create_depth(0,room_height/2-sprite_height/2 -200,-100, objboss_notice);
-
 	}
 }
 

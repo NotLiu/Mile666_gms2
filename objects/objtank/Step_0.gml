@@ -5,7 +5,7 @@ if(online == true){
 	if(room == roomstore){
 		image_speed = 0;
 	}
-	if(room == roomstore && keyboard_check_pressed(ord("E"))){ //disembark tank
+	if(room == roomstore && keyboard_check_pressed(ord("E")) && place_meeting(x, y+sprite_height/2, objcollidenottank)){ //disembark tank
 		instance_create_depth(x,y,-5, objplayer);
 		online = false;
 		objbarrel.online = false;
