@@ -35,12 +35,12 @@ dist_delay -= 1;
 
 //spawn enemies
 if(room == roomgame && alarm[0] = -1 && enemy_cnt <= 4 + 2*global.level && global.bossfight == false){
-	var random_spawn = irandom_range(650/global.level/5,900/global.level/5);
+	var random_spawn = irandom_range(650/global.level/5 + (dist_delay_set - 70)*5,900/global.level/5 + (dist_delay_set - 70)*5);
 	alarm[0] = random_spawn;
 }
 //spawn obstacles
 if(room == roomgame && alarm[1] = -1 && global.bossfight == false){
-	var random_spawn_obs = irandom_range(800/global.level/5,1600/global.level/5);
+	var random_spawn_obs = irandom_range(800/global.level/5 + (dist_delay_set - 70)*5,1600/global.level/5 + (dist_delay_set - 70)*5);
 	alarm[1] = random_spawn_obs;
 }
 

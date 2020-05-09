@@ -4,6 +4,7 @@ room_goto(roomgame);
 global.pitstop = false;
 objGameManager.boss_beat = false;
 objGameManager.curr_hlth = objGameManager.hlth;
+objGameManager.running = true;
 
 with(objParralax){
 	bg1_spd = 8;
