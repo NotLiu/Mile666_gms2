@@ -41,6 +41,7 @@ if((mouse_check_button_pressed(mb_left) || keyboard_check_pressed(vk_right)) && 
 		}
 		delay = objGameManager.delay_set;
 	}
+	objscreenshake.shake_value = .6;
 }
 
 
@@ -52,6 +53,7 @@ if((mouse_check_button(mb_right) || keyboard_check(vk_left)) && delay_2nd <= 0 &
 		}
 		delay_2nd = objGameManager.delay_2nd_set;
 	}
+	objscreenshake.shake_value = .2;
 }
 
 delay -= 1;

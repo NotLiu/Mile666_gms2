@@ -6,6 +6,7 @@ enemy = instance_place(x,y,objenemy);
 if(enemy != noone){
 	with(enemy){
 		curr_hlth -= other.dmg;	
+		flashAlpha = 1;
 	}
 	
 	if(object_get_name(object_index) == objShell){

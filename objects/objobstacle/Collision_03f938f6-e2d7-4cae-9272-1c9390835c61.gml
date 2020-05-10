@@ -5,6 +5,7 @@ if(objtank.iframe == false){
 	objGameManager.hlth -= 1;
 	objtank.iframe = true;
 	objtank.flashAlpha = 1;
+	objscreenshake.shake_value = 2;
 }
 
 part_emitter_region(part, emitter, x-30,x+90,y-90,y,ps_shape_line,ps_distr_gaussian);

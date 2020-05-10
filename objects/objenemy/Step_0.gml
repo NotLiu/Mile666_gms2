@@ -18,7 +18,7 @@ if(x != rand_pos_x && intro == true){
 	x=lerp(x, rand_pos_x, adj_spd);
 	y=lerp(y, rand_pos_y, adj_spd);
 	if(abs(x-rand_pos_x)<0.5){
-		online = false;
+		intro = false;
 		x = rand_pos_x;
 	}
 	
@@ -27,5 +27,5 @@ if(x != rand_pos_x && intro == true){
 
 //flash
 if(flashAlpha > 0){
-	flashAlpha -= 0.05;
+	flashAlpha -= 0.08;
 }
