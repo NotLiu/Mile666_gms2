@@ -6,13 +6,19 @@ boss_banner = noone;
 hlth = 10;
 dist = 49;
 
+// tank stats - here to keep them persistent as theyll reset after we switch rooms
+delay_set = 20;
+delay_2nd_set = 10;
+pri_dmg = 45;
+second_dmg = 15;
+
 dist_delay_set = 70;
 dist_delay = dist_delay_set;
 running = true;
 
 upgrade_pt = 0;
 pts = 0;
-cash = 0;
+cash = 33333;
 
 enemy_cnt = 0;
 

@@ -1,21 +1,30 @@
 /// @description  Insert description here
 // You can write your code in this editor
 depth = 1;
-
 //control by keyboard
 if(keyboard_check(vk_up)){
-	image_angle += 1;	
+	image_angle += 1.5;	
 }
 if(keyboard_check(vk_down)){
-	image_angle -= 1;
+	image_angle -= 1.5;
 }
 
 //clamp barrel angle
-if(image_angle<=180 && image_angle>80){
-	image_angle = 80;	
+if(global.control == 0){
+	if(image_angle<=180 && image_angle>80){
+		image_angle = 80;	
+	}
+	if(image_angle<340 && image_angle>180){
+		image_angle = 340;	
+	}
 }
-if(image_angle<340 && image_angle>180){
-	image_angle = 340;	
+else{
+	if(image_angle < -20){
+		image_angle = -20;	
+	}
+	if(image_angle > 80){
+		image_angle = 80;	
+	}
 }
 
 
@@ -30,7 +39,7 @@ if((mouse_check_button_pressed(mb_left) || keyboard_check_pressed(vk_right)) && 
 			speed = 40;
 			direction = other.image_angle;
 		}
-		delay = 20;
+		delay = objGameManager.delay_set;
 	}
 }
 
@@ -41,7 +50,7 @@ if((mouse_check_button(mb_right) || keyboard_check(vk_left)) && delay_2nd <= 0 &
 			speed = 50;
 			direction = other.image_angle;
 		}
-		delay_2nd = 10;
+		delay_2nd = objGameManager.delay_2nd_set;
 	}
 }
 

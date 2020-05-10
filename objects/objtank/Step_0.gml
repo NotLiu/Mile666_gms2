@@ -37,7 +37,7 @@ if(online == true){
 	
 		if(x_vel < 0 && objGameManager.dist_delay_set <= 120){
 			objGameManager.dist_delay_set += 1;
-			objParralax.bg1_spd -= .09;
+			objParralax.bg1_spd -= .08;
 			objParralax.bg2_spd -= .04;
 			objParralax.bg3_spd -= .02;
 		}

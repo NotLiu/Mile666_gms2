@@ -3,6 +3,9 @@
 if(place_meeting(x,y,objplayer) && keyboard_check_pressed(ord("E")) && shop_menu == noone){
 	shop_menu = instance_create_depth(100,100,-100,objshopmenu);
 	//get booster
-	objGameManager.boost = true
+	if(objGameManager.boost = false){
+		objGameManager.boost = true
+		scr_notification("Boosters Unlocked!");
+	}
 }
 

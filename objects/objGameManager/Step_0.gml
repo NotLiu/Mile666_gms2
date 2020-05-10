@@ -33,6 +33,7 @@ else{ //reset to default
 }
 dist_delay -= 1;
 
+
 //spawn enemies
 if(room == roomgame && alarm[0] = -1 && enemy_cnt <= 4 + 2*global.level && global.bossfight == false){
 	var random_spawn = irandom_range(650/global.level/5 + (dist_delay_set - 70)*5,900/global.level/5 + (dist_delay_set - 70)*5);

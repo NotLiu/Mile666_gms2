@@ -65,20 +65,6 @@
             "value": "5",
             "varName": "proj_speed",
             "varType": 0
-        },
-        {
-            "id": "7cac10ae-95b1-443a-9b05-ce1aa99e4327",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "45",
-            "varName": "dmg",
-            "varType": 0
         }
     ],
     "solid": false,

@@ -3,6 +3,8 @@
 
 image_angle = objbarrel.image_angle;
 
+dmg = objGameManager.pri_dmg;
+
 contact_ground = false;
 notdone = true;
 

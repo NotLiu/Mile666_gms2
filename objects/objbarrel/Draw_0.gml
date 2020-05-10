@@ -3,6 +3,8 @@
 
 // Inherit the parent event
 event_inherited();
-//draw_line_color(x, y , x + lengthdir_x(1200,image_angle), y + lengthdir_y(1200,image_angle), c_red, c_fuchsia);
 
+if(global.control == 1){
+	draw_line_color(x, y , x + lengthdir_x(1200,image_angle), y + lengthdir_y(1200,image_angle), c_red, c_fuchsia);
+}
 
