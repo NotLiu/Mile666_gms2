@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "01a98b2e-a7c8-4fb3-b5fe-62c17265c958",
+            "Value": {
+                "id": "b44b8e46-824c-449e-855b-f8928428077d",
+                "resourcePath": "sprites\\sprite35\\sprite35.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "029612f3-501c-414d-a811-3d888beb8ca9",
             "Value": {
                 "id": "66c26590-03da-4cd9-bdb3-0d3f4167b9fe",
@@ -439,6 +447,14 @@
             }
         },
         {
+            "Key": "7fb07661-3a1a-4d8a-9ab7-30d19a1a0f76",
+            "Value": {
+                "id": "71d1ad8e-d39d-4c4b-9616-f79cc679950a",
+                "resourcePath": "objects\\objenemy_arrow\\objenemy_arrow.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8152190c-4a49-473a-8822-64eff8d5a47a",
             "Value": {
                 "id": "302d49db-f9f5-413d-aeae-d340b6a6f6ef",
@@ -650,7 +666,7 @@
             "Key": "a1866b87-fd82-4e6d-8be3-ffe1921e50e6",
             "Value": {
                 "id": "4eabda70-472b-4ba4-b1f7-9322d912421a",
-                "resourcePath": "objects\\object46\\object46.yy",
+                "resourcePath": "objects\\objCamera\\objCamera.yy",
                 "resourceType": "GMObject"
             }
         },

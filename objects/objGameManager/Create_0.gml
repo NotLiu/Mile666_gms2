@@ -4,7 +4,7 @@ depth = -100;
 boss_beat = false;
 boss_banner = noone;
 hlth = 10;
-dist = 0;
+dist = 49;
 
 // tank stats - here to keep them persistent as theyll reset after we switch rooms
 delay_set = 20;

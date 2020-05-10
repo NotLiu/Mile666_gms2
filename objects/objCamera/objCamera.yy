@@ -1,28 +1,18 @@
 {
-    "id": "2be9decd-d7b8-43c1-82d5-10a60a889eef",
+    "id": "a1866b87-fd82-4e6d-8be3-ffe1921e50e6",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "objscreenshake",
+    "name": "objCamera",
     "eventList": [
         {
-            "id": "aa904c49-4698-440d-8274-47bd0477c336",
+            "id": "f114af31-78c2-4077-bd4a-0ffe2d79cc51",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "2be9decd-d7b8-43c1-82d5-10a60a889eef"
-        },
-        {
-            "id": "d8c1b94b-ea45-4680-8ace-a0df5198eddc",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "2be9decd-d7b8-43c1-82d5-10a60a889eef"
+            "m_owner": "a1866b87-fd82-4e6d-8be3-ffe1921e50e6"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
