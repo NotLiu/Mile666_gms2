@@ -57,7 +57,7 @@ if(online == true){
 		while(!place_meeting(x, y+sign(y_vel), objcollide)){
 			y += sign(y_vel);	
 		}
-		if(boost_amt < 100 && place_meeting(x, y+sprite_height/2, objcollide)){
+		if(boost_amt < boost_max && place_meeting(x, y+sprite_height/2, objcollide)){
 		boost_amt += 1
 		}
 		y_vel = 0;
@@ -82,7 +82,7 @@ if(online == true){
 	}
 	else if(keyboard_check(vk_space) && !place_meeting(x, y+sprite_height/2, objcollide) && boosters = true && boost_amt > 0){ //if not on ground and have boost upgrade
 		y_vel -= boost_vel;
-	
+		objscreenshake.shake_value = 1;
 		part_emitter_region(part, emitter, x-90,x-55,y-70,y-50,ps_shape_ellipse,ps_distr_linear);
 		part_emitter_burst(part, emitter, type, irandom_range(1,3));
 		boost_amt -= 1;

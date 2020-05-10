@@ -18,7 +18,7 @@ if(fire_delay <= 0 && fire){
 	if(atk_type == 1 || atk_type == 2){ // fire projectiles 3 num_atk times
 		for(j = 0; j<num_atk; j++){
 			for(i = 0; i<3; i++){
-				with(instance_create_depth(x,y,2,objenemy_atk)){
+				with(instance_create_depth(x+60*j,y,2,objenemy_atk)){
 					direction = point_direction(x,y,objtank.x,objtank.y)-45 + 45*other.i;
 					speed = 10;
 				}

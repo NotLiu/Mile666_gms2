@@ -25,7 +25,8 @@ grav_set = 1;
 grav = grav_set;
 
 boosters = objGameManager.boost;
-boost_amt = 100;
+boost_max = 100;
+boost_amt = boost_max;
 boost_vel = 2;
 boost_min_y = 200;
 

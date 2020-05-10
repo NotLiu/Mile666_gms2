@@ -10,4 +10,4 @@ instance_create_depth(x+30, y+50, -200, objShopkeep);
 //primary atk spd up
 instance_create_depth(x+400, y+50, -200, objPrimary);
 //secondary atk spd up
-instance_create_depth(x+700, y+50, -200, objSecondary);
+instance_create_depth(x+800, y+50, -200, objSecondary);
