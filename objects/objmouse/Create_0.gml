@@ -5,3 +5,4 @@
 event_inherited();
 
 text = "MOUSE";
+audio_play_sound(snd_pitstop, 10, 1);

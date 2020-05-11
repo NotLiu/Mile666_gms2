@@ -33,7 +33,7 @@ else{
 var bulletspawnx = x+lengthdir_x(barrel_length, image_angle+barrel_direction);
 var bulletspawny = y+lengthdir_y(barrel_length, image_angle+barrel_direction);
 
-if((mouse_check_button_pressed(mb_left) || keyboard_check_pressed(vk_right)) && delay <= 0 && online == true){		
+if((mouse_check_button_pressed(mb_left) || keyboard_check(vk_right)) && delay <= 0 && online == true){		
 	//audio_play_sound(snd_explosion, 10, 0);
 	audio_play_sound(snd_afterexp, 10 , 0);
 	if(primary_wep == "cannon"){

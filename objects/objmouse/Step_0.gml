@@ -5,7 +5,13 @@
 event_inherited();
 
 if(hover == true && mouse_check_button_pressed(mb_left)){
-	audio_play_sound(snd_impact, 10, 0);
+	audio_stop_sound(snd_pitstop);
+	//audio_play_sound(snd_impact, 10, 0);
 	global.control = 0;
-	room_goto_next();	
+	audio_play_sound(snd_main, 10, 1);	
+	
+	if(alarm[0] = -1){
+		alarm[0] = 150;
+	}
+	
 }

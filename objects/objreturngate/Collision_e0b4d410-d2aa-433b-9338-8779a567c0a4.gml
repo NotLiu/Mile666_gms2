@@ -4,8 +4,9 @@ room_goto(roomgame);
 global.level += 1;
 global.pitstop = false;
 objGameManager.boss_beat = false;
-objGameManager.curr_hlth = objGameManager.hlth;
+objGameManager.hlth = objGameManager.hlth_set;
 objGameManager.running = true;
+audio_play_sound(snd_main, 10, 0);
 
 with(objParralax){
 	bg1_spd = 8;
