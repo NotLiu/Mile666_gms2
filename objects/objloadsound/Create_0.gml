@@ -1,8 +1,3 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-// Inherit the parent event
-event_inherited();
-
-text = "MOUSE";
-play = true;
+audio_group_load(audiogroup_default);

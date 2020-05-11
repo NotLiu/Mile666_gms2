@@ -4,5 +4,5 @@
 event_inherited();
 
 if(alarm[0]==-1){ //destroy shell after time
-	alarm[0] = 40;	
+	alarm[0] = 25;
 }

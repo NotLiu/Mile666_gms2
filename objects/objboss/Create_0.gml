@@ -6,7 +6,7 @@ event_inherited();
 
 rand_pos_x = 1160;
 rand_pos_y = 300;
-hlth = 3000;
+hlth = 4000;
 curr_hlth = hlth;
 
 cash_mult = 5;
