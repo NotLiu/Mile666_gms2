@@ -3,3 +3,5 @@
 
 instance_destroy(objParralax);
 instance_destroy(objCamera);
+
+audio_play_sound(snd_impact, 10, 0);

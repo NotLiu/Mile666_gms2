@@ -6,4 +6,5 @@ if(keyboard_check(ord("3")) && keyboard_check(ord("6"))){
 	if(room != roomintro){
 		instance_destroy(objGameManager);
 	}
+	audio_stop_all();
 }

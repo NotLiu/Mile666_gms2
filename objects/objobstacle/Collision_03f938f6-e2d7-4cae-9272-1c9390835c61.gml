@@ -6,6 +6,7 @@ if(objtank.iframe == false){
 	objtank.iframe = true;
 	objtank.flashAlpha = 1;
 	objscreenshake.shake_value = 3;
+	audio_play_sound(snd_explosion, 10, 0);
 }
 
 part_emitter_region(part, emitter, x-30,x+90,y-90,y,ps_shape_line,ps_distr_gaussian);

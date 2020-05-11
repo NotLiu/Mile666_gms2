@@ -10,6 +10,7 @@ if(curr_hlth <= 0){ //dies
 		global.bossfight = false;
 		objGameManager.boss_beat = true;
 	}
+	audio_play_sound(snd_defeat, 10, 0);
 }
 
 

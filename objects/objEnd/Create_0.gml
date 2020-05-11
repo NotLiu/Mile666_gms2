@@ -5,3 +5,4 @@
 event_inherited();
 
 text = "Points: "+ string(objGameManager.pts);
+instance_destroy(objGameManager);

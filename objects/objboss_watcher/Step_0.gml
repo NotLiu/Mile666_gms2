@@ -12,7 +12,7 @@ if(x == rand_pos_x){
 show_debug_message(fire_delay);
 show_debug_message(fire);
 if(fire_delay <= 0 && fire){
-	var num_atk = irandom_range(1,4);
+	var num_atk = irandom_range(1,5);
 	var atk_type = irandom_range(1,3);
 	show_debug_message("BOSSFIRE");
 	if(atk_type == 1 || atk_type == 2){ // fire projectiles 3 num_atk times

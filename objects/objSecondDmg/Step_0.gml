@@ -9,5 +9,6 @@ if(hover == true && mouse_check_button_pressed(mb_left)){
 		objGameManager.cash -= 300;
 		objGameManager.second_dmg += 3;
 		scr_notification("Secondary Weapon Damage Upgraded!");
+		audio_play_sound(snd_coin, 10, 0);
 	}
 }

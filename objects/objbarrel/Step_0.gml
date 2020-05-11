@@ -34,6 +34,8 @@ var bulletspawnx = x+lengthdir_x(barrel_length, image_angle+barrel_direction);
 var bulletspawny = y+lengthdir_y(barrel_length, image_angle+barrel_direction);
 
 if((mouse_check_button_pressed(mb_left) || keyboard_check_pressed(vk_right)) && delay <= 0 && online == true){		
+	//audio_play_sound(snd_explosion, 10, 0);
+	audio_play_sound(snd_afterexp, 10 , 0);
 	if(primary_wep == "cannon"){
 		with(instance_create_layer(bulletspawnx, bulletspawny, "Instances", objShell)){
 			speed = 40;
@@ -46,6 +48,7 @@ if((mouse_check_button_pressed(mb_left) || keyboard_check_pressed(vk_right)) && 
 
 
 if((mouse_check_button(mb_right) || keyboard_check(vk_left)) && delay_2nd <= 0 && online == true){
+	audio_play_sound(snd_gun, 10, 0);
 	if(secondary_wep == "machinegun"){
 		with(instance_create_layer(bulletspawnx, bulletspawny, "Instances", objBullet)){
 			speed = 50;
@@ -54,6 +57,7 @@ if((mouse_check_button(mb_right) || keyboard_check(vk_left)) && delay_2nd <= 0 &
 		delay_2nd = objGameManager.delay_2nd_set;
 	}
 	objscreenshake.shake_value = .2;
+
 }
 
 delay -= 1;

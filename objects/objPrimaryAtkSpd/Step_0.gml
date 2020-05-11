@@ -9,5 +9,6 @@ if(hover == true && mouse_check_button_pressed(mb_left)){
 		objGameManager.cash -= 300;
 		objGameManager.delay_set -= 2;
 		scr_notification("Primary Weapon Attack Speed Upgraded!");
+		audio_play_sound(snd_coin, 10, 0);
 	}
 }

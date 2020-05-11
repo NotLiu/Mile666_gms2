@@ -7,6 +7,7 @@ if(enemy != noone){
 	with(enemy){
 		curr_hlth -= other.dmg;	
 		flashAlpha = 1;
+		audio_play_sound(snd_explosion, 10, 0);
 	}
 	
 	if(object_get_name(object_index) == objShell){

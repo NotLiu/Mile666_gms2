@@ -10,10 +10,16 @@ if(dist_delay<=0 && dist < 666 && running == true && boss_banner == noone && bos
 		boss_banner = instance_create_depth(0,room_height/2-sprite_height/2 -200,-100, objboss_notice);
 	}
 }
+if(global.bossfight == true){
+	if(audio_is_playing(snd_boss) == false && audio_is_playing(snd_boss_cont) == false){
+		audio_play_sound(snd_boss_cont, 10, 1);	
+	}
+}
 
 if(boss_beat == true && room != roomstore){
 
 	room_goto(roomstore);	
+	audio_stop_all();
 	/*with(objtank){
 		online = false;	
 	}*/
@@ -25,7 +31,6 @@ if(global.bossfight == true || global.pitstop == true){
 		bg2_spd = 0;
 		bg3_spd = 0;
 	}
-	
 	running = false;
 }
 else{ //reset to default
